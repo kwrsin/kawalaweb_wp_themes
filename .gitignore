@@ -1,0 +1,16 @@
+.*
+!.gitignore
+*.yml
+*.yaml
+/db/
+/php/
+/wordpress/html/*.*
+/wordpress/html/wp-admin/
+/wordpress/html/wp-includes/
+/wordpress/html/wp-content/*.*
+/wordpress/html/wp-content/languages/
+/wordpress/html/wp-content/plugins/
+/wordpress/html/wp-content/upgrade/
+/wordpress/html/wp-content/uploads/
+/wordpress/html/wp-content/themes/*
+!/wordpress/html/wp-content/themes/kawalaweb
