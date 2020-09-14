@@ -19,4 +19,4 @@ jobs:
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: wordpress/html/wp-content/themes
-        
+        git-ftp-args: --remote-root ${{ secrets.FTP_REMOTE_ROOT }}
