@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+:root {
+    --sidebar-size: 250px;
+    --avatar-size: 50px;
+    --artwork-size: 180px;
+    --artwork-size-pc: 280px;
+    --artwork-conner: 10px;
+    --aspect-rate: 0.75;
+    --base-color: black;
+    --bg-color: white;
+    --accent-color: rgb(185, 26, 106);
+}
+
+* {
+    margin: 0;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body, html {
+    /* height: 100%; */
+    background:var(--bg-color);
+    color: var(--base-color);   
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, Meiryo, sans-serif;
+    background-image: url('../assets/images/grid.png');
+}
+
+#avatar {
+    background: url('http://www.gravatar.com/avatar/6a77f615cddf25231f63bb9e4476fc4c.jpg?s=50') no-repeat center;
+    border-radius: 50%;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    margin: 2em auto 1em auto;
+}
+
+figcaption {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+figure:before {
+    z-index: -999;
+    position: absolute;
+    top: 0px;
+    background: url('../assets/images/figure_bg.svg') no-repeat left;
+    background-size: cover;
+    content: "";
+    width: 100%;
+    min-height: 160px;
+}
+
+header {
+    color: var(--base-color);
+    /* display: flex; */
+    /* grid-template-columns: auto 40px; */
+    position: fixed;
+    z-index: 999;
+    width: var(--sidebar-size);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#drawer {
+    display: none;
+}
+
+header .socials {
+    height: 100%;
+    width: 100%;
+    background: var(--base-color);
+    margin-top: 20%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+#contact .socials ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#contact .socials img {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    /* width: var(--avatar-size); */
+    /* height: var(--avatar-size); */
+    filter: drop-shadow(4px 4px 4px #7a7a7a);
+    margin: 0rem 1rem;
+}
+
+#contact .socials img:hover {
+    animation-name: vibe;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    filter: drop-shadow(4px 4px 4px #7a7a7a);
+}
+
+section .caption {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+section .caption div {
+    width: 100%;
+}
+
+section .caption img#logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 999;
+    filter: drop-shadow(4px 4px 4px #7a7a7a);
+}
+
+section .caption img#prisoner {
+    display: block;
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    left: calc(50% - 10%);
+}
+
+section .caption .subtitle {
+    font-family: serif;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* color: var(--accent-color); */
+}   
+  
+section h1 {
+    color: #000;
+    /* font-size: 2.2rem; */
+    font-size: x-large;
+    font-family: 'arial black', sans-serif;
+    font-style: italic;  
+}
+
+section h3 {
+    font-family: cursive;
+    font-size: 2rem;
+    padding: 1.2rem;
+    text-align:center;
+}
+
+section h4 {
+    color: var(--accent-color);
+    font-style: italic;
+}
+  
+section .description {
+    padding: 20px;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+section .description p {
+    /* text-indent: 1rem; */
+    padding-bottom: 1.1rem;
+}
+
+section .description p:first-letter {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+section .experiences, section .abilities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section .experiences div, section .abilities div {
+    text-align: center;
+}
+
+header section ul {
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+section .cards {
+    margin-top: 1.6rem;
+}
+
+section .card {
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+section .card span:before {
+    display: inline-block;
+    margin-top: 35px;
+    content: "";
+}
+
+section .card .artwork .grave {
+    filter: drop-shadow(2px 2px 2px #7a7a7a);
+}
+
+section .card .artwork.west {
+    margin-right: 10px;
+    float: left;
+}
+
+section .card .artwork.east {
+    margin-left: 10px;
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .card .artwork h4, section .card .artwork h5 {
+    text-align: center;
+}    
+
+section .card img {
+    width: var(--artwork-size);
+    border-radius: var(--artwork-conner);
+    opacity: 0.8;
+}
+
+section .card .grave:before {
+    position: absolute;
+    background: url('../assets/images/grave.png') no-repeat;
+    background-size: var(--artwork-size);
+    width: var(--artwork-size);
+    height: calc(var(--artwork-size) * var(--aspect-rate));
+    border-radius: var(--artwork-conner);
+    z-index: 999;
+    content: "";
+    opacity: 0.8;
+}
+
+section .card .storebadges {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes shake {
+    0%   {width:168px; height:40px;}
+    25%  {width:170px; height:45px;}
+    50%  {width:168px; height:40px;}
+    75%  {width:170px; height:45px;}
+    100% {width:168px; height:40px;}
+}
+
+@keyframes vibe {
+    0%   {transform:rotate(-15deg);}
+    25%  {transform:rotate(15deg);}
+    50%  {transform:rotate(-15deg);}
+    75%  {transform:rotate(15deg);}
+    100% {transform:rotate(-0deg);}
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+nav ul li {
+    text-align: center;
+    padding-top: 2rem;
+    height: 45px;
+}
+
+nav ul li a img {
+    filter: drop-shadow(2px 2px 2px #7a7a7a);
+    transform: rotate(-5deg);
+}
+
+nav ul li a:hover img.shake {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    filter: hue-rotate(180deg);
+    filter: drop-shadow(2px 2px 2px #7a7a7a);
+    width: 170px;
+    height: 45px;
+    transform: rotate(-5deg);
+}
+
+section {
+    position: relative;
+    /* margin-bottom: 2rem; */
+}
+
+
+#home, #aboutme, #artworks, #contact {
+    /* background-color:rgba(255,255,255,0.65); */
+    /* background-blend-mode:lighten; */
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #home {
+    background-image: url("../assets/images/fukuoka_tower.jpeg");
+    background-color: rgba(128, 128, 128, 0.8);
+    background-blend-mode:lighten;
+    min-height: 100vh;
+  }
+
+  #aboutme {
+    color: var(--bg-color);
+    opacity: 1.0;
+    background: rgba(0, 0, 0, 0.9);
+    min-height: 400px;
+  }
+  
+  #artworks {
+    /* background-image: url("img_parallax3.jpg"); */
+    opacity: 1.0;
+    /* min-height: 400px; */
+  }
+
+  #contact {
+    background-image: url("../assets/images/schoolofchurch.jpeg");
+    background-color:rgba(128, 128, 128, 0.8);
+    background-blend-mode:lighten;
+  }
+
+  #contact .socials {
+    padding: 0rem 3rem;
+  }
+
+  #contact p {
+      text-align: center;
+      margin-bottom: 2rem;
+      line-height: 2rem;
+  }
+
+  #aboutme ul {
+      /* margin-top: 0.5rem; */
+      margin-bottom: 2rem;
+  }
+
+  footer {
+    /* margin-top: 2rem; */
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 1.5rem; */
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--base-color);
+  }
+
+@media only screen and (max-width: 768px) {
+    #home, #aboutme, #artworks, #contact {
+        background-attachment: scroll;
+    }
+
+    header {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header img.burger {
+        position: absolute;
+        right: 0px;
+        top: -5px;
+    }
+    
+    .spacing:before {
+        display: block;
+        content: "";
+        height: 120px;
+    }
+
+    #avatar {
+        margin: 0.5rem 1rem;
+    }
+
+    figure div {
+        /* display: none; */
+        position: absolute;
+        left: 0px;
+    }
+
+    figcaption {
+        padding: 17px 20px;
+        text-align: center;
+    }
+
+    figure:before {
+        background-size: cover;
+        content: "";
+        top: -150%;
+    }
+
+    header nav {
+        position: absolute;
+        right: -60px;
+        transition-duration: 0.2s;
+        transition-delay: 0;
+    }
+
+    header nav img {
+        margin: .5rem 1rem;
+    }
+
+    header nav img.shake {
+        display: none;
+    }    
+
+    #drawer:checked ~ nav {
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* body { */
+        /* display: flex; */
+        /* justify-content: flex-end; */
+        /* flex-direction: column; */
+        /* grid-template-columns: var(--sidebar-size) auto; */
+
+    /* } */
+
+    header {
+        flex-direction: column;
+        height: 100%;
+        grid-template-columns: var(--sidebar-size);
+        grid-template-rows: 20% auto;
+        padding: 0;
+        left: 0;
+    }
+
+    header nav::after {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        border-bottom-style: solid;
+        border-color: var(--base-color);
+        border-width: 1.5rem;
+    }    
+
+    figcaption {
+        transform: rotate(-2deg);
+    }
+    
+    
+    section {
+        left: var(--sidebar-size);
+        width: calc(100% - var(--sidebar-size));
+    }
+
+    #home, #aboutme, #artworks, #contact {
+        background-position-x: calc(var(--sidebar-size) / 2);
+    }
+
+    img.burger {
+        display: none;
+    }
+
+    header nav {
+        display: block !important;
+    }
+
+    figure:before {
+        min-height: 160px;
+    }   
+
+    header ul {
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    section .experiences div, section .abilities div {
+        width: 30%;
+    }
+
+    section ul li {
+        margin: 0.5rem;
+    }
+
+    section .card {
+        padding: 0 10%;
+    }
+            
+    section .card .artwork.west {
+        margin-right: 1.5rem;
+    }
+    
+    section .card .artwork.east {
+        margin-left: 1.5rem;
+    }
+    
+    section .card img {
+        width: var(--artwork-size-pc);
+    }
+       
+    section .card .grave:before {
+        background-size: var(--artwork-size-pc);
+        width: var(--artwork-size-pc);
+        height: calc(var(--artwork-size-pc) * var(--aspect-rate));
+    }    
+
+}
