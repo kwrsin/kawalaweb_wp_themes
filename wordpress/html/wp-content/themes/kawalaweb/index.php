@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kawala-Web</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+    <?php wp_head(); ?>
 </head>
 <body>
     <header data-scroll-header>
@@ -128,12 +129,6 @@
                         <li>English is OK. but I have Broken English.😓</li>
                     </ul>
                 </div>
-                <!-- <div>
-                    <h4>Birth</h4>
-                    <ul>
-                        <li>XX/XX/1975</li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </section>
@@ -302,5 +297,6 @@
             assemble_addr()
         })()
     </script>
+    <?php wp_footer(); ?>
 </body>
 </html>
