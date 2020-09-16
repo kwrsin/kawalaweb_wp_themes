@@ -165,7 +165,7 @@
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fchart.png" alt="">
                         </div>
-                        <h5>2014-2017</h5>
+                        <h5>2018-</h5>
                     </div>                    
                     <span>
                         "Money comes and goes." right?<br>
@@ -185,7 +185,7 @@
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/okappa.png" alt="">
                         </div>
-                        <h5>2019-</h5>
+                        <h5>2017-</h5>
                     </div>                    
                     <span>
                         I am afraid that there would be no one put a plastic model on his/her head in japan.<br>
@@ -206,7 +206,7 @@
                         <div class="grave">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yabusame.png" alt="">
                         </div>
-                        <h5>2014-2017</h5>
+                        <h5>2014-2019</h5>
                     </div>                    
                     <span>Here is a game app scrolling infinitely which a player on horse having a bow and arrows is going to destroy targets to get high scores. Why I decided to create one was to aim at getting a position of horrible game like flappy bird. <br>He died, safely, in 2019, without gaining popularity.</span>
                 </div>
@@ -226,7 +226,7 @@
                         <div class="grave">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pochittona.png" alt="">
                         </div>
-                        <h5>2014-2017</h5>
+                        <h5>2015-2015</h5>
                     </div>                    
                     <span>
                         even though you push the button, a lot of mechas (i.e. tiny robots) does not rush out of a parent's mouth as fighting supporters.<br>
