@@ -21,25 +21,25 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#home">
+                    <a href="../#home">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iHome.svg" alt="home" height="32px" width="32px">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tHome.svg" alt="home" height="40px" width="168px" class="shake">
                     </a>
                 </li>
                 <li>
-                    <a href="#aboutme">
+                    <a href="../#aboutme">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iAboutMe.svg" alt="aboutme" height="32px" width="32px">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tAboutMe.svg" alt="aboutme" height="40px" width="168px" class="shake">
                     </a>
                 </li>
                 <li>
-                    <a href="#artworks">
+                    <a href="../#artworks">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iArtworks.svg" alt="artworks" height="32px" width="32px">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tArtworks.svg" alt="artworks" height="40px" width="168px" class="shake">
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">
+                    <a href="../#contact">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iContact.svg" alt="contact" height="32px" width="32px">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tContact.svg" alt="contact" height="40px" width="168px" class="shake">
                     </a>
