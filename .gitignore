@@ -2,6 +2,7 @@
 !.gitignore
 *.yml
 *.yaml
+!.xd
 /db/
 /php/
 /wordpress/html/*.*
