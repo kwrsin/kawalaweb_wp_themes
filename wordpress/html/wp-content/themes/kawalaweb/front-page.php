@@ -44,6 +44,12 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tContact.svg" alt="contact" height="40px" width="168px" class="shake">
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo esc_url( home_url( '/loggers/' ) ); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iAxe.svg" alt="loggers" height="32px" width="32px">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tLogger.svg" alt="loggers" height="40px" width="168px" class="shake">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
