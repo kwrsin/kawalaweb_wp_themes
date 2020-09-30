@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/loggers.css">
     <?php wp_head(); ?>
 </head>
 <body>
@@ -47,7 +48,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#home">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iEnter.svg" alt="KawaraWeb" height="32px" width="32px" class="vibe">
                         </a>
                     </li>
