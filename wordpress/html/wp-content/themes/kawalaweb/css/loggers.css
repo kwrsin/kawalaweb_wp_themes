@@ -470,9 +470,25 @@ section {
 
 .tags_looks .list_wrapper ul li a {
     color: rgb(0, 0, 0);
-}    
+} 
 
+nav.navigation.pagination {
+    text-align: center;
+    width: var(--artwork-size);
+}
 
+nav.navigation.pagination .page-numbers {
+    font-size: 1.2rem;
+    margin: 0.4rem;
+}
+
+nav.navigation.pagination img {
+    width: 20px;
+}
+
+.screen-reader-text {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     .tloggers {
@@ -565,4 +581,9 @@ section {
         width: 50%;
         margin: 5% auto;
     }
+
+    nav.navigation.pagination {
+        width: var(--artwork-size-pc);
+    }
+    
 }

@@ -46,7 +46,8 @@
 
             <?php the_posts_pagination(
                 array(
-                    'screen_reader_text' => '',
+                    'prev_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iLeft.svg" alt="prev"/>',
+                    'next_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iRight.svg" alt="next"/>',
                 )
             ); ?>
         </div>
