@@ -16,3 +16,13 @@ function KawalaWeb_setup_theme() {
     set_post_thumbnail_size( 760, 300, true );
 } 
 add_action( 'after_setup_theme', 'KawalaWeb_setup_theme' );
+
+/*
+ * Remove #more-000 anchor from the read-more link.
+ */
+function KawalaWeb_remove_more_link_anchor( $link ) {
+    $link = preg_replace( '/#more-[0-9]+/', '', $link );
+    return $link;
+  }
+  
+  add_filter( 'the_content_more_link', 'KawalaWeb_remove_more_link_anchor' );

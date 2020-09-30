@@ -9,13 +9,20 @@
             <div class="articles">
             <?php if( have_posts() ) : ?>
                 <?php while( have_posts() ) : the_post(); ?>
-                <article>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="overview">
                         <div class="date"><time><?php echo get_the_date(); ?></time></div>
-                        <h4><?php the_title(); ?></h4>
-                        <div class="description"><?php the_content(); ?></div>
+                        <?php the_title(
+                            '<h4><a href="' . esc_url( get_permalink() ) . '">',
+                            '</a></h4>'
+                        ); ?>
+                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="eyecatcher">
-                            <?php the_post_thumbnail(); ?>
+                            <?php if( has_post_thumbnail() ) : ?>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_post_thumbnail(); ?>
+                                </a>
+                            <?php endif; ?>
                         </div>    
                         <div class="subinformations">
                             <div class="categorylist">
@@ -33,9 +40,15 @@
                 </article>
                 <?php endwhile; ?>
             <?php else: ?>
-                <!-- Not Founded Articles. -->
+                Not Founded Any Articles int the Blog.
             <?php endif; ?>
             </div>
+
+            <?php the_posts_pagination(
+                array(
+                    'screen_reader_text' => '',
+                )
+            ); ?>
         </div>
         <div id="categories" class="info categories_looks">
             <div class="band categories">
