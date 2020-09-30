@@ -50,7 +50,7 @@
     <section id="home">
         <div class="caption">
             <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/KawalaWeb.svg" alt="KawalaWeb" id="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/KawalaWebL.svg" alt="KawalaWeb" id="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/prisoner.gif" alt="" id="prisoner">
             </div>
         </div>
