@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/loggers.css">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <section id="home">
         <figure>
             <div>

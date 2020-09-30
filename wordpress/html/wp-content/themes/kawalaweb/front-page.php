@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header data-scroll-header>
         <figure>
             <div id="avatar">
