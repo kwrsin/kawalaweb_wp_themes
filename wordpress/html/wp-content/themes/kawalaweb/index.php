@@ -7,50 +7,15 @@
         </div>
         <div class="container articles_looks articles_looks_sub">
             <div class="articles">
+            <?php if( have_posts() ) : ?>
+                <?php while( have_posts() ) : the_post(); ?>
                 <article>
                     <div class="overview">
-                        <div class="date">
-                            2020.01.01(sat) 10:00:00
-                        </div>
-                        <h4>
-                            もうと慾をがた来た一一年当時へ向って、それかできたくていですについて事でそうただすたのでて、もっともやま事を大変うて、もし否やが思うてさから来ないます。
-                        </h4>
-                        <div class="description">
-                            あなたは多年はなはだこの相当家という訳のために詰めますない。
-
-                            勢い場合が吟味方もかつてこの汚辱たないでもを聴いてならですがもお話し聞きありたて、それほどには聞いないますだた。
-                            
-                            本位にいうた事は同時に今が同時にでですう。
-                            
-                            しきりに岩崎君の関係人当然不足にもったい非そんな根私か招待とという同意見なけれたたなて、こんな場合はあなたか事情画を切り開いて、嘉納君の事に顔の私をたといお入会とするから私科学をご附随より云うようにけっしてご発会をかけますだって、まるでちょうど供をあてるなてしまっなのをしですう。
-                            
-                            またただお秋刀魚のするのはどう立派とするたから、この手段にも当てたからという状態をしば得るですない。
-                            
-                            この一方非の時そうした個人は私上にしないかと岡田さんを違っだです、行儀の毎日でというごごろごろたうなが、主義の日に別を場合ほどのお茶を生涯するとしまいから、実際の一番を云うからこの末によくしでなとなるべきものんで、正しいなたてまだお道具ありだものんたな。
-                            
-                            そうして間柄か立派か呈を致しませて、一遍中金力に始めばくれるないうちをご説明の翌日をあろたです。
-                            
-                            時間をはどうしても打ち壊すて考えんたたうて、むしろもちろんしから運動はこうないですもので。
-                            
-                            けれどもご助力に強いるがさえ下さらでのましば、半途には、一々私か行って立ちれなけれます応じられますますと悟って、がたは潰れるからおきならな。
-                            
-                            しきりに何ともはまあ秩序というくれたが、私がも今日ごろしも誰のご尊敬は恐ろしい防いならですで。
-                            
-                            あなたはやはり徹底の事から同相当は怒っているただろなたて、二一のがたをいろいろなりなというお尋ねだながら、またはこの見識の此年がするれると、私かに彼の自己をお話で立っといるますのたましと講演なって公言し来るですん。
-                            
-                            間接をしかしネルソンさんをただ少しすでし訳んますです。
-                            
-                            嘉納さんもああ免をなりてなっうものますました。
-                            
-                            （そうして他人がしためなだなかってではするましなので、）あまり立たまし状態が、ジクソンの主義でも云って落ちとして、自分の存在も同年のためなど偽ら向いものに会ったて反抗方見えでいるないというお弊害ます事ませ。
-                            
-                            ここもとうとう在来のそれたように懸ているうのですから実はそう熊本義務行なわないで。
-                            
-                            かつああ二日は種類を分りで、前をつい気がつきましなとなっが、易たなてまたお関係があるましだ。
-                            
-                        </div>
+                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
+                        <h4><?php the_title(); ?></h4>
+                        <div class="description"><?php the_content(); ?></div>
                         <div class="eyecatcher">
-                            <img src="https://via.placeholder.com/256x90.png?text=" alt="">
+                            <?php the_post_thumbnail(); ?>
                         </div>    
                         <div class="subinformations">
                             <div class="categorylist">
@@ -66,91 +31,10 @@
                         </div>
                     </div>
                 </article>
-                <article>
-                    <div class="overview">
-                        <div class="date">
-                            2020.01.02(sat) 11:40:10
-                        </div>
-                        <h4>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae non quibusdam obcaecati fuga aspernatur eveniet repellat necessitatibus minus unde iste. Dignissimos tempora iste totam consequatur quia sed perspiciatis odio dolorem!
-                            Atque dicta aperiam ipsum numquam officia esse qui quasi recusandae itaque. Aut adipisci aliquam aspernatur sapiente, repellendus natus quos optio tenetur repudiandae fugit asperiores ad debitis mollitia, quibusdam enim magnam!
-                            Iure dolorem non similique esse magni reprehenderit sit voluptatum facilis unde placeat ad odio ducimus maiores illo deserunt explicabo molestias aliquam veritatis eveniet excepturi, illum vel facere nobis. Tempore, optio.
-                        </h4>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, iusto ipsum. Expedita itaque eos vel dicta qui sed suscipit soluta ipsa hic nisi illo accusantium, est placeat atque ea amet.
-                            Voluptate ad nobis voluptatum architecto eius nihil asperiores quae officia! Fugit tempore minima ea, eius quo, nesciunt, numquam quae tenetur sed recusandae iure facilis laboriosam error ratione optio ipsam maxime?
-                            Vel et numquam dolores alias laborum voluptatibus debitis consequuntur, doloribus quibusdam sint voluptas earum hic optio saepe quos pariatur, repellendus eligendi neque at libero molestiae quasi sequi! Autem, quasi velit.
-                            Repudiandae perferendis obcaecati eius unde similique maiores, deleniti sequi placeat molestias aliquid. Deserunt animi error explicabo nostrum fuga maiores enim cum facere a odit eveniet soluta id, sed ipsam distinctio?
-                            Expedita, neque ratione. Exercitationem amet totam explicabo eum quo, quam ipsa repellat alias rem minima qui tenetur saepe tempora laudantium autem odio! Ea explicabo labore consequatur fugiat atque. Veniam, ipsum?
-                        </div>
-                        <div class="eyecatcher">
-                            <img src="https://via.placeholder.com/256x90.png?text=" alt="">
-                        </div>    
-                        <div class="subinformations">
-                            <div class="categorylist">
-                                <a href="">cate1</a>
-                                <a href="">カテカテカテカテカテ2</a>
-                                <a href="">catecatecate3</a>
-                                <a href="">cate1</a>
-                                <a href="">カテカテカテ2</a>
-                                <a href="">catecate3</a>
-                                <a href="">カテカテ1</a>
-                                <a href="">cate2</a>
-                                <a href="">cate3</a>
-                            </div>
-                            <div class="taglist">
-                                <a href="">#tag1</a>
-                                <a href="">#タグタグタグタグタグ2</a>
-                                <a href="">#tag3</a>
-                                <a href="">#タグtagtagtagtag1</a>
-                                <a href="">#tag2</a>
-                                <a href="">#タグタグtagtagtag3</a>
-                                <a href="">#tag1</a>
-                                <a href="">#タグtagtagtagtagtag2</a>
-                                <a href="">#tag3</a>
-                                <a href="">#タグtagtagtagtag1</a>
-                                <a href="">#tagtagtag2</a>
-                                <a href="">#tag3</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="overview">
-                        <div class="date">
-                            2020.01.02(sat) 11:40:10
-                        </div>
-                        <h4>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae non quibusdam obcaecati fuga aspernatur eveniet repellat necessitatibus minus unde iste. Dignissimos tempora iste totam consequatur quia sed perspiciatis odio dolorem!
-                            Atque dicta aperiam ipsum numquam officia esse qui quasi recusandae itaque. Aut adipisci aliquam aspernatur sapiente, repellendus natus quos optio tenetur repudiandae fugit asperiores ad debitis mollitia, quibusdam enim magnam!
-                            Iure dolorem non similique esse magni reprehenderit sit voluptatum facilis unde placeat ad odio ducimus maiores illo deserunt explicabo molestias aliquam veritatis eveniet excepturi, illum vel facere nobis. Tempore, optio.
-                        </h4>
-                        <div class="description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                        </div>
-                        <div class="eyecatcher">
-                            <!-- <img src="https://via.placeholder.com/256x90.png?text=" alt=""> -->
-                        </div>    
-                        <div class="subinformations">
-                            <div class="categorylist">
-                                <a href="">cate1</a>
-                                <a href="">cate2</a>
-                                <a href="">cate3</a>
-                                <a href="">cate1</a>
-                                <a href="">cate2</a>
-                                <a href="">cate3</a>
-                                <a href="">cate1</a>
-                                <a href="">cate2</a>
-                                <a href="">cate3</a>
-                            </div>
-                            <div class="taglist">
-                                <a href="">#tag1</a>
-                                <a href="">#tag2</a>
-                                <a href="">#tag3</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <?php endwhile; ?>
+            <?php else: ?>
+                <!-- Not Founded Articles. -->
+            <?php endif; ?>
             </div>
         </div>
         <div id="categories" class="info categories_looks">
