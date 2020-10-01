@@ -19,7 +19,7 @@
                     <?php get_template_part('template-parts/posts/content') ?>
                 <?php endwhile; ?>
             <?php else: ?>
-                <div class="notfound-description">Not Founded Any Articles in the Blog.</div>
+                <div class="notfound-description"><span class="keyword">"<?php echo get_search_query(); ?>"</span> is Not Founded in the Blog.</div>
             <?php endif; ?>
             </div>
             <?php the_posts_pagination(

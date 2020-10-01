@@ -514,6 +514,11 @@ nav.navigation.post-navigation .nav-links {
     font-size: medium;
 }
 
+.keyword {
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
     .tloggers {
         width: 82%;
