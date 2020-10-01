@@ -8,7 +8,7 @@ function list_categories() {
     $categories = get_categories($args);
     if($categories && !is_wp_error($categories)) {
         foreach($categories as $category) { 
-            echo '<li><a href="' . get_category_link( $category->term_id ) . '"/>' . $category->name. '</a> </li> ';
+            echo '<li><a href="' . get_category_link( $category->term_id ) . '">' . $category->name. '</a> </li> ';
         } 
     } else {
         echo '<li>no categories</li>';
@@ -23,7 +23,7 @@ function list_tags() {
     $tags = get_tags($args);
     if($tags && !is_wp_error($tags)) {
         foreach($tags as $tag) { 
-            echo '<li><a href="' . get_tag_link( $tag->term_id ) . '"/>#' . $tag->name. '</a> </li> ';
+            echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">#' . $tag->name. '</a> </li> ';
         } 
     } else {
         echo '<li>no tags</li>';

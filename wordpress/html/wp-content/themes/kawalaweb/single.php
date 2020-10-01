@@ -7,6 +7,7 @@
         </div>
         <div class="container articles_looks articles_looks_sub">
             <div class="articles">
+            <?php while( have_posts() ) : the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="overview">
                         <div class="eyecatcher">
@@ -19,18 +20,15 @@
                         <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="subinformations">
                             <div class="categorylist">
-                                <a href="">cate1</a>
-                                <a href="">cate2</a>
-                                <a href="">cate3</a>
+                                <?php get_template_part('template-parts/posts/thepostcategories') ?>
                             </div>
                             <div class="taglist">
-                                <a href="">#tag1</a>
-                                <a href="">#tag2</a>
-                                <a href="">#tag3</a>
+                                <?php get_template_part('template-parts/posts/theposttags') ?>
                             </div>
                         </div>
                     </div>
                 </article>
+                <?php endwhile; ?>
             </div>
             <?php the_post_navigation(
                 array(
