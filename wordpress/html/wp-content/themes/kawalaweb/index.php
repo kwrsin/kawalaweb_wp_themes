@@ -6,6 +6,13 @@
             </div>
         </div>
         <div class="container articles_looks articles_looks_sub">
+            <?php if( ! is_home() ) : ?>
+                <?php 
+                    the_archive_title( '<h1 class="archive_title">', '</h1>' );
+                ?>
+            <?php endif; ?>
+
+
             <div class="articles">
             <?php if( have_posts() ) : ?>
                 <?php while( have_posts() ) : the_post(); ?>
