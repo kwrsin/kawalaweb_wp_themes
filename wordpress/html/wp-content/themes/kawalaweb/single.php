@@ -14,7 +14,7 @@
                                 <?php the_post_thumbnail(); ?>
                             <?php endif; ?>
                         </div>    
-                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
+                        <div class="date"><time><?php the_time( 'Y-m-d (D) G:i' ); ?></time></div>
                         <?php the_title('<h4>>', '</h4>'); ?>
                         <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="subinformations">

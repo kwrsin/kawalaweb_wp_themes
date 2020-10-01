@@ -18,7 +18,7 @@
                                 </a>
                             <?php endif; ?>
                         </div>    
-                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
+                        <div class="date"><time><?php the_time( 'Y-m-d (D) G:i' ); ?></time></div>
                         <?php the_title(
                             '<h4><a href="' . esc_url( get_permalink() ) . '">',
                             '</a></h4>'
