@@ -32,9 +32,6 @@ function list_tags() {
 
 ?>
 
-
-
-
         <div id="categories" class="info categories_looks">
             <div class="band categories">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tCategories.svg" alt="categories">
