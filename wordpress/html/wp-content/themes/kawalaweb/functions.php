@@ -26,4 +26,5 @@ function KawalaWeb_remove_more_link_anchor( $link ) {
     return $link;
   }
   
+add_theme_support('title-tag');
 add_filter( 'the_content_more_link', 'KawalaWeb_remove_more_link_anchor' );
