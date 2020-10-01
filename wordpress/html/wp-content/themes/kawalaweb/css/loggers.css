@@ -37,6 +37,10 @@ body {
     margin-left: 0.2rem;
 }
 
+a.mainlogo {
+    text-decoration: none;
+}
+
 #avatar {
     background: url('http://www.gravatar.com/avatar/6a77f615cddf25231f63bb9e4476fc4c.jpg?s=50') no-repeat center;
     margin-left: 0.2rem;

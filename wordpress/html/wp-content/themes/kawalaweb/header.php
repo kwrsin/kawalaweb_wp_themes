@@ -10,8 +10,10 @@
     <section id="home">
         <figure>
             <div>
+                <a href="/loggers" class="mainlogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iAxe.svg" alt="Loggers Icon" class="iloggers">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tLogger.svg" alt="Loggers" class="tloggers">
+            </a>
             </div>
             <div>
                 <figcaption>shintarou<br>kawara</figcaption>
@@ -23,7 +25,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="/loggers">
+                        <a href="#home">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iHome2.svg" alt="home" height="32px" width="32px" class="vibe">
                         </a>
                     </li>
