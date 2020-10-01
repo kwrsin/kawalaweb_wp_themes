@@ -6,21 +6,7 @@
             </div>
         </div>
         <div class="container articles_looks articles_looks_sub">
-            <?php if( ! is_home() ) : ?>
-                <?php 
-                    the_archive_title( '<h1 class="archive_title">', '</h1>' );
-
-                    if ( is_category() || is_tag() ) {
-                        $desc = get_the_archive_description();
-                        
-                        if ( $desc ) {
-                          echo '<div class="archive-description">' . $desc . '</div>';
-                        } 
-                      }
-                ?>
-            <?php else: ?>
-                <?php get_template_part('template-parts/posts/founedmessages') ?>
-            <?php endif; ?>
+            <?php get_template_part('template-parts/posts/founedmessages') ?>
             <div class="articles">
             <?php if( have_posts() ) : ?>
                 <?php while( have_posts() ) : the_post(); ?>

@@ -63,7 +63,7 @@ function list_tags() {
         </div>
         <div class="container search_looks">
             <div class="search_box">
-                <form name="form_search" method="get" onSubmit="search_articles(event)">
+                <form name="form_search" method="get" action="/loggers" onSubmit="search_articles(event)">
                     <input type="text" name="s" placeholder="Search...">
                     <div class="search_btn" onClick="search_articles(event)">
                         <i class="search_icon"></i>
