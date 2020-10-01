@@ -9,14 +9,14 @@
             <div class="articles">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="overview">
-                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
-                        <?php the_title('<h4>>', '</h4>'); ?>
-                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="eyecatcher">
                             <?php if( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail(); ?>
                             <?php endif; ?>
                         </div>    
+                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
+                        <?php the_title('<h4>>', '</h4>'); ?>
+                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="subinformations">
                             <div class="categorylist">
                                 <a href="">cate1</a>

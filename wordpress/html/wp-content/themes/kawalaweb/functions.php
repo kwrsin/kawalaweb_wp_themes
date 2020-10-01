@@ -14,6 +14,7 @@ add_action( 'wp_enqueue_scripts', 'KawalaWeb_enqueue_scripts' );
 function KawalaWeb_setup_theme() {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 760, 300, true );
+    add_image_size( 'whitesnow-single-image', 960, 540, true );
 } 
 add_action( 'after_setup_theme', 'KawalaWeb_setup_theme' );
 

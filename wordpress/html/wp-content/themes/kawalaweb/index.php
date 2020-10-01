@@ -11,12 +11,6 @@
                 <?php while( have_posts() ) : the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="overview">
-                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
-                        <?php the_title(
-                            '<h4><a href="' . esc_url( get_permalink() ) . '">',
-                            '</a></h4>'
-                        ); ?>
-                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="eyecatcher">
                             <?php if( has_post_thumbnail() ) : ?>
                                 <a href="<?php the_permalink(); ?>">
@@ -24,6 +18,12 @@
                                 </a>
                             <?php endif; ?>
                         </div>    
+                        <div class="date"><time><?php echo get_the_date(); ?></time></div>
+                        <?php the_title(
+                            '<h4><a href="' . esc_url( get_permalink() ) . '">',
+                            '</a></h4>'
+                        ); ?>
+                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
                         <div class="subinformations">
                             <div class="categorylist">
                                 <a href="">cate1</a>
