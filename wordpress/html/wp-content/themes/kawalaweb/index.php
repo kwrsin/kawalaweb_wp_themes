@@ -43,7 +43,6 @@
                 Not Founded Any Articles int the Blog.
             <?php endif; ?>
             </div>
-
             <?php the_posts_pagination(
                 array(
                     'prev_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iLeft.svg" alt="prev"/>',
@@ -51,72 +50,7 @@
                 )
             ); ?>
         </div>
-        <div id="categories" class="info categories_looks">
-            <div class="band categories">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tCategories.svg" alt="categories">
-            </div>
-        </div>
-        <div class="container categories_looks">
-            <div class="list_wrapper">
-                <ul>
-                    <li><a href="">Tutorials</a></li>
-                    <li><a href="">Daliy</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">KawaraWeb</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="tags"  class="info tags_looks">
-            <div class="band tags">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tTags.svg" alt="tags">
-            </div>
-        </div>
-        <div class="container tags_looks">
-            <div class="list_wrapper">
-                <ul>
-                    <li><a href="">#c++</a></li>
-                    <li><a href="">#design</a></li>
-                    <li><a href="">#css</a></li>
-                    <li><a href="">#internatioal languages</a></li>
-                    <li><a href="">#machine larnings</a></li>
-                    <li><a href="">#python</a></li>
-                    <li><a href="">#進撃の巨人</a></li>
-                    <li><a href="">#プラスティック姉さん</a></li>
-                    <li><a href="">#red hot chill pepeprs</a></li>
-                    <li><a href="">#木村カエラ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="search"  class="info search_looks">
-            <div class="band search">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tSearch.svg" alt="search">
-            </div>
-        </div>
-        <div class="container search_looks">
-            <div class="search_box">
-                <input type="text" name="search" placeholder="Search...">
-                <div class="search_btn">
-                    <i class="search_icon"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="socials">
-            <h3>Contact Me</h3>
-            <p>
-                Thank you for visiting my website.<br>
-                Please feel free to contact me using below Email/SNS icons, if you have any questions or requests.
-            </p>
-            <div>
-                <ul>
-                    <li><a href="" target="_blank" id="email"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.png" alt="" height="48" width="48"></a></li>
-                    <li><a href="https://twitter.com/kwrsin" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="" height="48" width="48"></a></li>
-                    <li><a href="https://github.com/kwrsin" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/github.png" alt="" height="48" width="48"></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('template-parts/loggers/subcontents') ?>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script>

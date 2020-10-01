@@ -25,4 +25,4 @@ function KawalaWeb_remove_more_link_anchor( $link ) {
     return $link;
   }
   
-  add_filter( 'the_content_more_link', 'KawalaWeb_remove_more_link_anchor' );
+add_filter( 'the_content_more_link', 'KawalaWeb_remove_more_link_anchor' );
