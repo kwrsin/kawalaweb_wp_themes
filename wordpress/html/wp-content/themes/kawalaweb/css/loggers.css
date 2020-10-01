@@ -571,6 +571,7 @@ nav.navigation.pagination img {
 
     section .articles .eyecatcher img {
         width: auto;
+        max-width: 80%;
     }
 
     .overview h4, .overview .description {
