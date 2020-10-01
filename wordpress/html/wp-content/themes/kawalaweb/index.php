@@ -9,6 +9,14 @@
             <?php if( ! is_home() ) : ?>
                 <?php 
                     the_archive_title( '<h1 class="archive_title">', '</h1>' );
+
+                    if ( is_category() || is_tag() ) {
+                        $desc = get_the_archive_description();
+                        
+                        if ( $desc ) {
+                          echo '<div class="archive-description">' . $desc . '</div>';
+                        } 
+                      }
                 ?>
             <?php endif; ?>
 

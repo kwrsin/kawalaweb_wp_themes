@@ -502,9 +502,16 @@ nav.navigation.post-navigation .nav-links {
 
 .archive_title {
     color: rgb(240, 240, 240);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-left: 1rem;
     font-size: large;
+}
+
+.archive-description {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    margin-left: 1.2rem;
+    font-size: medium;
 }
 
 @media only screen and (max-width: 768px) {
