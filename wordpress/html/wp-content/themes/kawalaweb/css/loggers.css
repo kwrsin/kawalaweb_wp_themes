@@ -486,6 +486,12 @@ nav.navigation.pagination img {
     width: 20px;
 }
 
+nav.navigation.post-navigation .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: var(--artwork-size);
+}
+
 .screen-reader-text {
     display: none;
 }
@@ -583,7 +589,7 @@ nav.navigation.pagination img {
         margin: 5% auto;
     }
 
-    nav.navigation.pagination {
+    nav.navigation.pagination, nav.navigation.post-navigation .nav-links {
         width: var(--artwork-size-pc);
     }
     

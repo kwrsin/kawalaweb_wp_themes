@@ -23,7 +23,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home">
+                        <a href="/loggers">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iHome2.svg" alt="home" height="32px" width="32px" class="vibe">
                         </a>
                     </li>
