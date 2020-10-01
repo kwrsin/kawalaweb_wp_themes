@@ -2,11 +2,11 @@
 /*
  * Enqueue styles and scripts.
  */
-// function KawalaWeb_enqueue_scripts() {
-//   wp_enqueue_style( 'KawalaWeb-style', get_stylesheet_directory_uri() . "/css/loggers.css" );
+function KawalaWeb_enqueue_scripts() {
+    wp_enqueue_script('KawalaWeb-js', get_template_directory_uri() . '/js/helpers.js', array('jquery'), null, true);
+}
 
-// }
-// add_action( 'wp_enqueue_scripts', 'KawalaWeb_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'KawalaWeb_enqueue_scripts' );
 
 /*
  * Setup KawalaWebtheme.

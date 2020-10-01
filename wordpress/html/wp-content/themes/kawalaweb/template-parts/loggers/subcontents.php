@@ -66,10 +66,12 @@ function list_tags() {
         </div>
         <div class="container search_looks">
             <div class="search_box">
-                <input type="text" name="search" placeholder="Search...">
-                <div class="search_btn">
-                    <i class="search_icon"></i>
-                </div>
+                <form name="form_search" method="get">
+                    <input type="text" name="s" placeholder="Search...">
+                    <div class="search_btn" onClick="search_articles(event)">
+                        <i class="search_icon"></i>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
