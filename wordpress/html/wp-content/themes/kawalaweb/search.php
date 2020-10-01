@@ -6,13 +6,7 @@
             </div>
         </div>
         <div class="container articles_looks articles_looks_sub">
-            <?php
-                echo '<div class="search-title">KEY WORD : ' . get_search_query() . '</div>';
-                $count = $wp_query->found_posts;
-                if($count > 0) {
-                    echo '<div class="search-description">' . $count. ' COUNTS HIT</div>';
-                }
-            ?>
+            <?php get_template_part('template-parts/posts/founedmessages') ?>
             <div class="articles">
             <?php if( have_posts() ) : ?>
                 <?php while( have_posts() ) : the_post(); ?>

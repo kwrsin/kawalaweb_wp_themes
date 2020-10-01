@@ -18,6 +18,8 @@
                         } 
                       }
                 ?>
+            <?php else: ?>
+                <?php get_template_part('template-parts/posts/founedmessages') ?>
             <?php endif; ?>
             <div class="articles">
             <?php if( have_posts() ) : ?>
