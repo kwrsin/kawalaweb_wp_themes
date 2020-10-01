@@ -6,26 +6,20 @@
             </div>
         </div>
         <div class="container articles_looks articles_looks_sub">
-            <?php if( ! is_home() ) : ?>
-                <?php 
-                    the_archive_title( '<h1 class="archive_title">', '</h1>' );
-
-                    if ( is_category() || is_tag() ) {
-                        $desc = get_the_archive_description();
-                        
-                        if ( $desc ) {
-                          echo '<div class="archive-description">' . $desc . '</div>';
-                        } 
-                      }
-                ?>
-            <?php endif; ?>
+            <?php
+                echo '<div class="search-title">KEY WORD : ' . get_search_query() . '</div>';
+                $count = $wp_query->found_posts;
+                if($count > 0) {
+                    echo '<div class="search-description">' . $count. ' COUNTS HIT</div>';
+                }
+            ?>
             <div class="articles">
             <?php if( have_posts() ) : ?>
                 <?php while( have_posts() ) : the_post(); ?>
                     <?php get_template_part('template-parts/posts/content') ?>
                 <?php endwhile; ?>
             <?php else: ?>
-                Not Founded Any Articles int the Blog.
+                <div class="notfound-description">Not Founded Any Articles in the Blog.</div>
             <?php endif; ?>
             </div>
             <?php the_posts_pagination(

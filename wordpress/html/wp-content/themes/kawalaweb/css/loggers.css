@@ -500,14 +500,14 @@ nav.navigation.post-navigation .nav-links {
     display: none;
 }
 
-.archive_title {
+.archive_title, .search-title {
     color: rgb(240, 240, 240);
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     font-size: large;
 }
 
-.archive-description {
+.archive-description, .search-description, .notfound-description {
     color: var(--accent-color);
     margin-bottom: 1rem;
     margin-left: 1.2rem;
