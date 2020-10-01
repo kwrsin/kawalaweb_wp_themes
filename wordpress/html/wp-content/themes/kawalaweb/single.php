@@ -32,7 +32,12 @@
                     </div>
                 </article>
             </div>
-            <?php the_post_navigation(); ?>
+            <?php the_post_navigation(
+                array(
+                    'prev_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iLeft.svg" alt="prev"/>',
+                    'next_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iRight.svg" alt="next"/>',
+                )
+            ); ?>
             
         </div>
     <?php get_template_part('template-parts/loggers/subcontents') ?>
