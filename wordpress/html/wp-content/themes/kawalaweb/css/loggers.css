@@ -242,7 +242,15 @@ section .articles .eyecatcher {
 
 section .articles .eyecatcher img {
     border-radius: 3px;
-    width: 90%;
+    width: 95%;
+    height: 95%;
+    object-fit: none;
+}
+
+.blog section .articles .eyecatcher img {
+    width: 60%;
+    height: 60%;
+    object-fit: none;
 }
 
 @keyframes shake {
