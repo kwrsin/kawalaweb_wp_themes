@@ -377,6 +377,98 @@ section {
     background-color: var(--base-color);
   }
 
+  @keyframes beat {
+    from   {transform:scale(1.0);}
+    to  {transform:scale(1.1);}
+  }
+
+  main.notfound header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--base-color);
+  }
+
+  main.notfound header #avatar {
+      margin: auto;
+  }
+
+  main.notfound header figure:before {
+    position: relative;
+    min-height: 100%;
+    background: none;
+    content: none;
+  }
+
+  main.notfound figure div {
+    position: unset;
+  }
+
+  main.notfound .notfound_content {
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; */
+    /* margin: 0 auto; */
+  }
+
+  main.notfound .notfound_content div {
+      text-align: center;
+      margin: 0 auto;
+      /* padding-left: .2%; */
+      /* padding-right: .2%; */
+  }
+
+  main.notfound .notfound_content img {
+    display: block;
+    margin: 5% auto;
+    max-width: 400px;
+  }
+
+  main.notfound .notfound_content img#search {
+    width: 20%;
+    filter: brightness(0.25);
+  }
+    
+  main.notfound .notfound_content img#notfound {
+    width: 80%;
+  }
+
+  main.notfound .notfound_content img#back {
+      width: 20%;
+      animation: beat .5s infinite;
+      animation-direction: alternate;
+      filter: drop-shadow(2px 2px 2px #7a7a7a);
+      
+    }
+    
+  main.notfound .notfound_content img#back:hover {
+      filter: drop-shadow(2px 2px 2px #7a7a7a);
+      filter: brightness(1.25);
+  }
+  
+  main.notfound footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    min-height: 10%;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  main.notfound footer img {
+    width: 10%;
+    min-width: 80px;
+  }
+
+
 @media only screen and (max-width: 768px) {
     #home, #aboutme, #artworks, #contact {
         background-attachment: scroll;
@@ -532,4 +624,20 @@ section {
         height: calc(var(--artwork-size-pc) * var(--aspect-rate));
     }    
 
+    main.notfound .notfound_content img {
+        margin: 8% auto;
+    }
+    
+    main.notfound .notfound_content img#search {
+        width: 20%;
+    }
+        
+    main.notfound .notfound_content img#notfound {
+        width: 160%;
+    }
+    
+    main.notfound .notfound_content img#back {
+        width: 20%;
+    }
+    
 }
