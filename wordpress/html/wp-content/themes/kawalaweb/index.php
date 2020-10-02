@@ -1,53 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kawala-Web</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <?php wp_head(); ?>
-</head>
-<body>
-    <header data-scroll-header>
-        <figure>
-            <div id="avatar">
+<?php get_header(); ?>
+    <section id="contents">
+        <div class="info articles_looks">
+            <div class="band lastarticles">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tLastArticles.svg" alt="Last Articles">
             </div>
-            <figcaption>shintarou kawara</figcaption>
-        </figure>
-        <input type="checkbox" id="drawer">
-        <label for="drawer">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/humberger.svg" alt="" width='48px' height="48px" class="burger">
-        </label>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../#home">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iHome.svg" alt="home" height="32px" width="32px">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tHome.svg" alt="home" height="40px" width="168px" class="shake">
-                    </a>
-                </li>
-                <li>
-                    <a href="../#aboutme">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iAboutMe.svg" alt="aboutme" height="32px" width="32px">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tAboutMe.svg" alt="aboutme" height="40px" width="168px" class="shake">
-                    </a>
-                </li>
-                <li>
-                    <a href="../#artworks">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iArtworks.svg" alt="artworks" height="32px" width="32px">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tArtworks.svg" alt="artworks" height="40px" width="168px" class="shake">
-                    </a>
-                </li>
-                <li>
-                    <a href="../#contact">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iContact.svg" alt="contact" height="32px" width="32px">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tContact.svg" alt="contact" height="40px" width="168px" class="shake">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        Hello! This is a page for POST.
-    </section>
+        </div>
+        <div class="container articles_looks articles_looks_sub">
+            <?php get_template_part('template-parts/posts/founedmessages') ?>
+            <div class="articles">
+            <?php if( have_posts() ) : ?>
+                <?php while( have_posts() ) : the_post(); ?>
+                    <?php get_template_part('template-parts/posts/content') ?>
+                <?php endwhile; ?>
+            <?php else: ?>
+                <div class="notfound-description"><span class="keyword">"<?php echo get_search_query(); ?>"</span> is Not Founded in the Blog.</div>
+            <?php endif; ?>
+            </div>
+            <?php the_posts_pagination(
+                array(
+                    'prev_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iLeft.svg" alt="prev"/>',
+                    'next_text' => '<img src="' . get_template_directory_uri() . '/assets/images/iRight.svg" alt="next"/>',
+                )
+            ); ?>
+        </div>
+    <?php get_template_part('template-parts/loggers/subcontents') ?>
     <?php get_footer(); ?>

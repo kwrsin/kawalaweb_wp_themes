@@ -1,6 +1,4 @@
-    <footer>
-        PLEASE GEVE ME JOBS!!
-    </footer>
+<footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script>
         (() => {
