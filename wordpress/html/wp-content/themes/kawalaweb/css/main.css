@@ -458,6 +458,9 @@ section {
     position: absolute;
     bottom: 0;
     min-height: 10%;
+    max-height: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     height: 16vh;
     display: flex;
     justify-content: center;
@@ -625,7 +628,7 @@ section {
     }    
 
     main.notfound .notfound_content img {
-        margin: 8% auto;
+        margin: 4% auto;
     }
     
     main.notfound .notfound_content img#search {
@@ -633,7 +636,7 @@ section {
     }
         
     main.notfound .notfound_content img#notfound {
-        width: 160%;
+        width: 140%;
     }
     
     main.notfound .notfound_content img#back {
