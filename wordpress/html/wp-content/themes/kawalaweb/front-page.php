@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/iKawala.ico" type="image/x-icon">
