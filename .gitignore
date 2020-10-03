@@ -15,3 +15,4 @@
 /wordpress/html/wp-content/uploads/
 /wordpress/html/wp-content/themes/*
 !/wordpress/html/wp-content/themes/kawalaweb
+docker-compose.yml
