@@ -11,10 +11,4 @@
                 </a>
             </div>
         </div>
-        <footer>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/KawalaWebL.svg" alt="KawalaWeb">
-        </footer>
-    </main>
-    <?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
