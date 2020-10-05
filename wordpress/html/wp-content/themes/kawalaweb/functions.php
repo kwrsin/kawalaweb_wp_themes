@@ -2,8 +2,35 @@
 /*
  * Enqueue styles and scripts.
  */
+
+
+function set_custom_ver_css_js($src)
+{
+    $hash = 9999;
+    $_src = parse_url($_src);
+
+    if (!$_src) {
+        return $hash;
+    }
+
+    $filePath = ABSPATH . $_src['path'];
+    if (file_exists($filePath)) {
+        $hash = filemtime($filePath);
+    }
+
+    return $hash;
+}
+
+
 function KawalaWeb_enqueue_scripts() {
-    wp_enqueue_script('KawalaWeb-js', get_template_directory_uri() . '/js/helpers.js', array('jquery'), null, true);
+    $js_path = get_template_directory_uri() . '/js/helpers.js';
+    wp_enqueue_script('KawalaWeb', $js_path, array('jquery'), set_custom_ver_css_js($js_path), true);
+    
+    $css_path = get_template_directory_uri() . '/css/loggers.css';
+    if(is_front_page() || is_404()) {
+        $css_path = get_template_directory_uri() . '/css/main.css';
+    }
+    wp_enqueue_style( 'KawalaWeb', $css_path, null, set_custom_ver_css_js($css_path));
 }
 
 add_action( 'wp_enqueue_scripts', 'KawalaWeb_enqueue_scripts' );

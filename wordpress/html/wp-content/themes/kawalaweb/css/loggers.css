@@ -208,7 +208,7 @@ section .articles .overview .date {
     margin-bottom: 0.5rem;
 }
 
-.overview h4, .overview .description {
+.overview h4, .blog .overview .description {
     width: calc(var(--artwork-size) - 2rem);
     overflow: hidden;
     height: 1.3rem;
@@ -217,9 +217,12 @@ section .articles .overview .date {
 
 .overview .description {
     margin-top: 0.5rem;
-    height: 4.7rem;
     font-size: 1rem;
     line-height: 1.6rem;
+}
+
+.blog .overview .description {
+    height: 4.7rem;
 }
 
 section .articles .categorylist, section .articles .taglist {

@@ -17,7 +17,7 @@
                         </div>    
                         <div class="date"><time><?php the_time( 'Y-m-d (D) G:i' ); ?></time></div>
                         <?php the_title('<h4>>', '</h4>'); ?>
-                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
+                        <div class="description"><?php the_content(); ?></div>
                         <div class="subinformations">
                             <div class="categorylist">
                                 <?php get_template_part('template-parts/posts/thepostcategories') ?>

@@ -1,4 +1,13 @@
-<footer></footer>
+<?php if(is_404()) { ;?>
+    <footer>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/KawalaWebL.svg" alt="KawalaWeb">
+        </footer>
+    </main>
+    <?php wp_footer(); ?>
+</body>
+</html>
+<?php } else { ;?>
+    <footer><?php if(is_front_page()) {echo 'PLEASE GEVE ME JOBS!!';} ?></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script>
         (() => {
@@ -40,3 +49,4 @@
     <?php wp_footer(); ?>
 </body>
 </html>
+<?php } ; ?>

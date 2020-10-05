@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/iKawala.ico" type="image/x-icon">
-    <?php wp_head(); ?>
-</head>
-<body>
-    <main class="notfound">
-        <header>
-            <figure>
-                <div id="avatar">
-                </div>
-            </figure>
-        </header>
+<?php get_header(); ?>
         <div class="notfound_content">
             <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iSearch.svg" alt="Search" id="search">
@@ -27,10 +11,4 @@
                 </a>
             </div>
         </div>
-        <footer>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/KawalaWebL.svg" alt="KawalaWeb">
-        </footer>
-    </main>
-    <?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
