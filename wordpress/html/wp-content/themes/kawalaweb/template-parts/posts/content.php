@@ -9,7 +9,7 @@
                         <div class="eyecatcher">
                             <?php if( has_post_thumbnail() ) : ?>
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail(); ?>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
                                 </a>
                             <?php endif; ?>
                         </div>    
