@@ -213,7 +213,7 @@ section .articles .overview .date {
     font-size: 1rem;
 }
 
-.overview h4, .blog .overview .description {
+.overview h4, .blog .overview .description, .archive .overview .description {
     overflow: hidden;
 }
 
@@ -227,7 +227,7 @@ section .articles .overview .date {
     line-height: 1.6rem;
 }
 
-.blog .overview .description {
+.blog .overview .description, .archive .overview .description {
     max-height: 9.4rem;
 }
 
