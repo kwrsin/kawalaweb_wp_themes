@@ -5,14 +5,18 @@
                             '<h4><a href="' . esc_url( get_permalink() ) . '">',
                             '</a></h4>'
                         ); ?>
-                        <div class="description"><?php the_content('<span class="">...</span>'); ?></div>
-                        <div class="eyecatcher">
+                        <div class="thumbnail_frame">
+                            <div class="description">
+                                <?php the_content('<span class="">...</span>'); ?>
+                            </div>
                             <?php if( has_post_thumbnail() ) : ?>
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                </a>
+                                <div class="eyecatcher">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                    </a>
+                                </div>    
                             <?php endif; ?>
-                        </div>    
+                        </div>
                         <div class="subinformations">
                             <div class="categorylist">
                                 <?php get_template_part('template-parts/posts/thepostcategories') ?>

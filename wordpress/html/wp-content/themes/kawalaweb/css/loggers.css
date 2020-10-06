@@ -238,6 +238,10 @@ section .articles .categorylist, section .articles .taglist {
     margin-bottom: 0;
 }
 
+.subinformations {
+    margin-top: 1rem;
+}
+
 .categorylist a, .taglist a {
     font-style: italic;
     margin: 0.2rem;
@@ -616,6 +620,7 @@ nav.navigation.post-navigation .nav-links {
     
     section .articles .eyecatcher {
         text-align: left;
+        margin-right: 1rem;
     }
 
     section .articles .eyecatcher img {
@@ -639,6 +644,11 @@ nav.navigation.post-navigation .nav-links {
     .single section .articles .eyecatcher img {
         width: auto;
         height: auto;
+    }
+
+    .thumbnail_frame {
+        display: flex;
+        flex-direction: row-reverse;
     }
     
 }
