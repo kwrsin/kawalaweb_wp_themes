@@ -7,7 +7,7 @@
 function set_custom_ver_css_js($src)
 {
     $hash = 9999;
-    $_src = parse_url($_src);
+    $_src = parse_url($src);
 
     if (!$_src) {
         return $hash;
