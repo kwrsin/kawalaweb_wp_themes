@@ -131,7 +131,7 @@ ul {
     padding-bottom: 2rem;
 }
 
-#contact .socials img {
+#contact .socials li img {
     border-radius: 50%;
     background-color: var(--accent-color);
     /* width: var(--avatar-size); */
@@ -140,7 +140,7 @@ ul {
     margin: 0rem 1rem;
 }
 
-#contact .socials img:hover {
+#contact .socials li img:hover {
     animation-name: vibe;
     animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
@@ -174,10 +174,12 @@ section h1 {
 }
 
 section h3 {
-    font-family: cursive;
-    font-size: 2rem;
     padding: 1.2rem;
-    text-align:center;
+    text-align: center;
+}
+
+section h3 img {
+    width: 40vw;
 }
 
 section h4 {
@@ -208,11 +210,17 @@ section .articles .overview .date {
     margin-bottom: 0.5rem;
 }
 
-.overview h4, .blog .overview .description {
+.overview h4, .overview .description {
     width: calc(var(--artwork-size) - 2rem);
-    overflow: hidden;
-    height: 1.3rem;
     font-size: 1rem;
+}
+
+.overview h4, .blog .overview .description, .archive .overview .description {
+    overflow: hidden;
+}
+
+.overview h4 {
+    height: 1.3rem;
 }
 
 .overview .description {
@@ -221,8 +229,8 @@ section .articles .overview .date {
     line-height: 1.6rem;
 }
 
-.blog .overview .description {
-    height: 4.7rem;
+.blog .overview .description, .archive .overview .description {
+    max-height: 9.4rem;
 }
 
 section .articles .categorylist, section .articles .taglist {
@@ -230,6 +238,10 @@ section .articles .categorylist, section .articles .taglist {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-bottom: 0;
+}
+
+.subinformations {
+    margin-top: 1rem;
 }
 
 .categorylist a, .taglist a {
@@ -245,14 +257,17 @@ section .articles .eyecatcher {
 
 section .articles .eyecatcher img {
     border-radius: 3px;
-    width: 95%;
-    height: 95%;
     object-fit: none;
 }
 
+.single section .articles .eyecatcher img {
+    width: 95%;
+    height: 95%;
+}
+
 .blog section .articles .eyecatcher img {
-    width: 60%;
-    height: 60%;
+    /* width: 60%;
+    height: 60%; */
     object-fit: none;
 }
 
@@ -607,6 +622,7 @@ nav.navigation.post-navigation .nav-links {
     
     section .articles .eyecatcher {
         text-align: left;
+        margin-right: 1rem;
     }
 
     section .articles .eyecatcher img {
@@ -614,6 +630,10 @@ nav.navigation.post-navigation .nav-links {
         max-width: 100%;
     }
 
+    section h3 img {
+        width: 20vw;
+    }
+    
     .overview h4, .overview .description {
         width: calc(var(--artwork-size-pc) - 2rem );
     }
@@ -625,6 +645,16 @@ nav.navigation.post-navigation .nav-links {
 
     nav.navigation.pagination, nav.navigation.post-navigation .nav-links {
         width: var(--artwork-size-pc);
+    }
+
+    .single section .articles .eyecatcher img {
+        width: auto;
+        height: auto;
+    }
+
+    .thumbnail_frame {
+        display: flex;
+        flex-direction: row-reverse;
     }
     
 }

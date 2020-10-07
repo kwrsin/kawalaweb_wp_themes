@@ -7,7 +7,7 @@
 function set_custom_ver_css_js($src)
 {
     $hash = 9999;
-    $_src = parse_url($_src);
+    $_src = parse_url($src);
 
     if (!$_src) {
         return $hash;
@@ -51,7 +51,18 @@ add_action( 'after_setup_theme', 'KawalaWeb_setup_theme' );
 function KawalaWeb_remove_more_link_anchor( $link ) {
     $link = preg_replace( '/#more-[0-9]+/', '', $link );
     return $link;
+}
+
+add_action( 'wp','controlCache', 1 );
+if ( !function_exists( 'controlCache' ) ):
+function controlCache() {
+  if (is_singular()) {
+    header( "Cache-Control:no-cache,no-store,must-revalidate,max-age=0" );
+    header( "Cache-Control:pre-check=0,post-check=0" ,false);
+    header( "Pragma:no-cache" );
   }
+}
+endif;
   
 $GLOBALS['content_width'] = 704;
 add_theme_support('title-tag');

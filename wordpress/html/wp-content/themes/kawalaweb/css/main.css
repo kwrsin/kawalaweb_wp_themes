@@ -95,7 +95,7 @@ header .socials {
     padding-bottom: 2rem;
 }
 
-#contact .socials img {
+#contact .socials li img {
     border-radius: 50%;
     background-color: var(--accent-color);
     /* width: var(--avatar-size); */
@@ -104,7 +104,7 @@ header .socials {
     margin: 0rem 1rem;
 }
 
-#contact .socials img:hover {
+#contact .socials li img:hover {
     animation-name: vibe;
     animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
@@ -157,10 +157,12 @@ section h1 {
 }
 
 section h3 {
-    font-family: cursive;
-    font-size: 2rem;
     padding: 1.2rem;
-    text-align:center;
+    text-align: center;
+}
+
+section h3 img {
+    width: 40vw;
 }
 
 section h4 {
@@ -627,6 +629,10 @@ section {
         height: calc(var(--artwork-size-pc) * var(--aspect-rate));
     }    
 
+    section h3 img {
+        width: 20vw;
+    }
+    
     main.notfound .notfound_content img {
         margin: 4% auto;
     }
