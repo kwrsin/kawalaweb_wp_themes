@@ -174,15 +174,12 @@ section h1 {
 }
 
 section h3 {
-    font-family: fantasy, serif;
-    font-size: 2rem;
     padding: 1.2rem;
     text-align: center;
 }
 
 section h3 img {
-    width: 25%;
-    height: 25%;
+    width: 40vw;
 }
 
 section h4 {
@@ -633,6 +630,10 @@ nav.navigation.post-navigation .nav-links {
         max-width: 100%;
     }
 
+    section h3 img {
+        width: 20vw;
+    }
+    
     .overview h4, .overview .description {
         width: calc(var(--artwork-size-pc) - 2rem );
     }

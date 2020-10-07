@@ -158,12 +158,11 @@ section h1 {
 
 section h3 {
     padding: 1.2rem;
-    text-align:center;
+    text-align: center;
 }
 
 section h3 img {
-    width: 25%;
-    height: 25%;
+    width: 40vw;
 }
 
 section h4 {
@@ -630,6 +629,10 @@ section {
         height: calc(var(--artwork-size-pc) * var(--aspect-rate));
     }    
 
+    section h3 img {
+        width: 20vw;
+    }
+    
     main.notfound .notfound_content img {
         margin: 4% auto;
     }
