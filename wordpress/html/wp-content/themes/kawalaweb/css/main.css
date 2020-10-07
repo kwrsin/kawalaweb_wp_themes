@@ -95,7 +95,7 @@ header .socials {
     padding-bottom: 2rem;
 }
 
-#contact .socials img {
+#contact .socials li img {
     border-radius: 50%;
     background-color: var(--accent-color);
     /* width: var(--avatar-size); */
@@ -104,7 +104,7 @@ header .socials {
     margin: 0rem 1rem;
 }
 
-#contact .socials img:hover {
+#contact .socials li img:hover {
     animation-name: vibe;
     animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
@@ -157,10 +157,13 @@ section h1 {
 }
 
 section h3 {
-    font-family: fantasy, serif;
-    font-size: 2rem;
     padding: 1.2rem;
     text-align:center;
+}
+
+section h3 img {
+    width: 25%;
+    height: 25%;
 }
 
 section h4 {

@@ -74,7 +74,7 @@ function list_tags() {
     </section>
     <section id="contact">
         <div class="socials">
-            <h3>Contact Me</h3>
+            <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3ContactMe.svg" alt="Contact Me"></h3>
             <p>
                 Thank you for visiting my website.<br>
                 Please feel free to contact me using below Email/SNS icons, if you have any questions or requests.

@@ -8,7 +8,7 @@
         </div>
     </section>
     <section id="aboutme">
-        <h3>About Me</h3>
+        <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3AboutMe.svg" alt="About Me"></h3>
         <div>
             <div class="description">
                 <p>
@@ -30,7 +30,7 @@
                     Here's a brief biography next to it
                 </p>
             </div>
-            <H3>My Abilities</H3>
+            <H3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3MyAbilities.svg" alt="My Abilities"></H3>
             <div class="abilities">
                 <div>
                     <h4>Developments</h4>
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </div>
-            <H3>My Experiences</H3>
+            <H3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3MyExperiences.svg" alt="My Experiences"></H3>
             <div class="experiences">
                 <div>
                     <h4>Achievements</h4>
@@ -85,7 +85,7 @@
         </div>
     </section>
     <section id="artworks">
-        <h3>My Artworks</h3>
+        <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3MyArtworks.svg" alt="My Artworks"></h3>
         <div>
             <div class="cards">
                 <div class="card clearfix">
@@ -194,7 +194,7 @@
     </section>
     <section id="contact">
         <div class="socials">
-            <h3>Contact Me</h3>
+            <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/h3ContactMe.svg" alt="Contact Me"></h3>
             <p>
                 Thank you for visiting my website.<br>
                 Please feel free to contact me using below Email/SNS icons, if you have any questions or requests.
