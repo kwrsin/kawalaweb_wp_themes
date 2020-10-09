@@ -608,7 +608,11 @@ nav.navigation.post-navigation .nav-links {
 
     nav img.shake {
         display: none;
-    }    
+    }
+    
+    .blog .articles_looks_sub, .archive .articles_looks_sub {
+        background-attachment: scroll;
+    }
 
     /* #drawer:checked ~ nav {
         right: 0;
