@@ -23,7 +23,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --articles-bg-color: rgba(26, 26, 26, 0.603);
-        --overview-bg-color: rgba(34, 34, 34, 0.726);
+        --overview-bg-color: rgba(88, 88, 88, 0.562);
         --articles-font-color: white;
         --categories-bg-color: rgba(128, 115, 71, 0.418);
         --tags-bg-color: rgba(69, 113, 124, 0.377);
@@ -649,6 +649,8 @@ nav.navigation.post-navigation .nav-links {
 
     section .articles .overview {
         width: var(--artwork-size-pc);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);    
     }
     
     section .articles .eyecatcher {
