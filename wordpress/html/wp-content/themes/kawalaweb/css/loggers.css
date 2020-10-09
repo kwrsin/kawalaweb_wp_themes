@@ -9,14 +9,27 @@
     --base-color: black;
     --bg-color: white;
     --accent-color: rgb(185, 26, 106);
+    --counter-color: rgb(185, 26, 106);
     --band-area-height: 65px;
     --band-area-height-pc: 70px;
-    --articles-bg-color: rgba(236, 236, 236, 0.2);
+    --articles-bg-color: rgba(207, 207, 207, 0);
+    --overview-bg-color: rgba(230, 230, 230, 0.774);
+    --articles-font-color: rgb(0, 0, 0);
     --categories-bg-color: rgba(250, 230, 166, 0.2);
     --tags-bg-color: rgba(103, 225, 255, 0.1);
     --search-bg-color: rgba(0, 0, 0, 0.7);
     --info-bg-color: rgba(0, 0, 0, 0.2);
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --articles-bg-color: rgba(26, 26, 26, 0.603);
+        --overview-bg-color: rgba(34, 34, 34, 0.726);
+        --articles-font-color: white;
+        --categories-bg-color: rgba(128, 115, 71, 0.418);
+        --tags-bg-color: rgba(69, 113, 124, 0.377);
+        }
+}
+  
 
 * {
     box-sizing: border-box;
@@ -187,6 +200,16 @@ section h4 {
     font-style: italic;
 }
 
+section a:link {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+section a:visited {
+    color: var(--counter-color);
+    font-style: italic;
+}
+
 section .articles {
     display: flex;
     justify-content: flex-start;
@@ -199,7 +222,7 @@ section .articles article {
 }
 
 section .articles .overview {
-    background: rgba(238, 238, 238, 0.781);
+    background: var(--overview-bg-color);
     border-radius: 8px;
     box-shadow: 1px 1px 1px rgba(173, 173, 173, 0.4);
     padding: 1rem;
@@ -401,12 +424,16 @@ section {
     background-color: var(--articles-bg-color);
 }
 
-.articles_looks_sub {
-    background: url("../assets/images/fukuoka_tower.jpeg") no-repeat center;
+.blog .articles_looks_sub, .archive .articles_looks_sub  {
+    background: url("../assets/images/forest.jpeg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    background-blend-mode: lighten;
-    opacity: 0.8;
+    background-blend-mode: luminosity;
+    opacity: 0.9;
+}
+
+.articles_looks_sub {
+    color: var(--articles-font-color);
 }
 
 .categories_looks {
