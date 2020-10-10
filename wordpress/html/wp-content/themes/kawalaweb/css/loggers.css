@@ -267,6 +267,15 @@ section .articles .categorylist, section .articles .taglist {
     margin-top: 1rem;
 }
 
+.back {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.back a {
+    text-decoration: none;
+}
+
 .categorylist a, .taglist a {
     font-style: italic;
     margin: 0.2rem;
@@ -327,12 +336,12 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li a img {
+nav ul li a img, .back a img {
     filter: drop-shadow(2px 2px 2px #7a7a7a);
     transform: rotate(-5deg);
 }
 
-nav ul li a:hover img.vibe {
+nav ul li a:hover img.vibe, .back a:hover img.vibe {
     animation-name: vibe;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;

@@ -109,7 +109,7 @@
                     </li>
                     <li>
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iEnter.svg" alt="KawaraWeb" height="32px" width="32px" class="vibe">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iKawala.svg" alt="KawaraWeb" height="32px" width="32px" class="vibe">
                         </a>
                     </li>
                 </ul>
