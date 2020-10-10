@@ -581,6 +581,11 @@ nav.navigation.post-navigation .nav-links {
     font-weight: bold;
 }
 
+.wp-block-image img {
+    width: auto;
+    height: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .tloggers {
         width: 82%;
