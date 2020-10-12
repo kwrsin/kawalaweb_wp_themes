@@ -26,6 +26,12 @@
                                 <?php get_template_part('template-parts/posts/theposttags') ?>
                             </div>
                         </div>
+                        <?php $host_name = $_SERVER['HTTP_HOST']; ?>
+                        <?php if (!empty($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], $host_name) !== false)) : ?>
+                        <div class="back">
+                            <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/iEnter.svg" alt="Back" class="vibe"></a>
+                        </div>
+                        <?php endif; ?>
                     </div>
                 </article>
                 <?php endwhile; ?>

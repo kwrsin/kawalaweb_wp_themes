@@ -9,14 +9,27 @@
     --base-color: black;
     --bg-color: white;
     --accent-color: rgb(185, 26, 106);
+    --counter-color: rgb(185, 26, 106);
     --band-area-height: 65px;
     --band-area-height-pc: 70px;
-    --articles-bg-color: rgba(236, 236, 236, 0.2);
+    --articles-bg-color: rgba(207, 207, 207, 0);
+    --overview-bg-color: rgba(230, 230, 230, 0.774);
+    --articles-font-color: rgb(0, 0, 0);
     --categories-bg-color: rgba(250, 230, 166, 0.2);
     --tags-bg-color: rgba(103, 225, 255, 0.1);
     --search-bg-color: rgba(0, 0, 0, 0.7);
     --info-bg-color: rgba(0, 0, 0, 0.2);
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --articles-bg-color: rgba(26, 26, 26, 0.603);
+        --overview-bg-color: rgba(88, 88, 88, 0.562);
+        --articles-font-color: white;
+        --categories-bg-color: rgba(128, 115, 71, 0.418);
+        --tags-bg-color: rgba(69, 113, 124, 0.377);
+        }
+}
+  
 
 * {
     box-sizing: border-box;
@@ -49,18 +62,18 @@ a.mainlogo {
     height: var(--avatar-size);
 }
 
-figure {
+figure.profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
 }
 
-figure div {
+figure.profile div {
     display: flex;
 }
 
-figcaption {
+figure.profile figcaption {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2rem;
     color: var(--bg-color);
@@ -187,6 +200,16 @@ section h4 {
     font-style: italic;
 }
 
+section a:link {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+section a:visited {
+    color: var(--counter-color);
+    font-style: italic;
+}
+
 section .articles {
     display: flex;
     justify-content: flex-start;
@@ -199,7 +222,7 @@ section .articles article {
 }
 
 section .articles .overview {
-    background: rgba(238, 238, 238, 0.781);
+    background: var(--overview-bg-color);
     border-radius: 8px;
     box-shadow: 1px 1px 1px rgba(173, 173, 173, 0.4);
     padding: 1rem;
@@ -215,7 +238,11 @@ section .articles .overview .date {
     font-size: 1rem;
 }
 
-.overview h4, .blog .overview .description, .archive .overview .description {
+.overview h4, .overview h4 {
+    display: inline-block;
+}
+
+.blog .overview .description, .archive .overview .description {
     overflow: hidden;
 }
 
@@ -224,6 +251,7 @@ section .articles .overview .date {
 }
 
 .overview .description {
+    word-wrap: break-word;
     margin-top: 0.5rem;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -242,6 +270,15 @@ section .articles .categorylist, section .articles .taglist {
 
 .subinformations {
     margin-top: 1rem;
+}
+
+.back {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.back a {
+    text-decoration: none;
 }
 
 .categorylist a, .taglist a {
@@ -304,12 +341,12 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li a img {
+nav ul li a img, .back a img {
     filter: drop-shadow(2px 2px 2px #7a7a7a);
     transform: rotate(-5deg);
 }
 
-nav ul li a:hover img.vibe {
+nav ul li a:hover img.vibe, .back a:hover img.vibe {
     animation-name: vibe;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -401,12 +438,16 @@ section {
     background-color: var(--articles-bg-color);
 }
 
-.articles_looks_sub {
-    background: url("../assets/images/fukuoka_tower.jpeg") no-repeat center;
+.blog .articles_looks_sub, .archive .articles_looks_sub  {
+    background: url("../assets/images/forest.jpeg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    background-blend-mode: lighten;
-    opacity: 0.8;
+    background-blend-mode: luminosity;
+    opacity: 0.9;
+}
+
+.articles_looks_sub {
+    color: var(--articles-font-color);
 }
 
 .categories_looks {
@@ -545,6 +586,11 @@ nav.navigation.post-navigation .nav-links {
     font-weight: bold;
 }
 
+.wp-block-image img {
+    width: auto;
+    height: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .tloggers {
         width: 82%;
@@ -581,7 +627,11 @@ nav.navigation.post-navigation .nav-links {
 
     nav img.shake {
         display: none;
-    }    
+    }
+    
+    .blog .articles_looks_sub, .archive .articles_looks_sub {
+        background-attachment: scroll;
+    }
 
     /* #drawer:checked ~ nav {
         right: 0;
@@ -618,6 +668,8 @@ nav.navigation.post-navigation .nav-links {
 
     section .articles .overview {
         width: var(--artwork-size-pc);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);    
     }
     
     section .articles .eyecatcher {
