@@ -238,7 +238,11 @@ section .articles .overview .date {
     font-size: 1rem;
 }
 
-.overview h4, .blog .overview .description, .archive .overview .description {
+.overview h4, .overview h4 {
+    display: inline-block;
+}
+
+.blog .overview .description, .archive .overview .description {
     overflow: hidden;
 }
 
