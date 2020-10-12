@@ -62,18 +62,18 @@ a.mainlogo {
     height: var(--avatar-size);
 }
 
-figure {
+figure.profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
 }
 
-figure div {
+figure.profile div {
     display: flex;
 }
 
-figcaption {
+figure.profile figcaption {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2rem;
     color: var(--bg-color);

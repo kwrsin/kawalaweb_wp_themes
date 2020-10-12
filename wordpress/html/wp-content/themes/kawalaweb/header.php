@@ -66,7 +66,7 @@
         </header>
 <?php } else { ;?>
     <section id="home">
-        <figure>
+        <figure class="profile">
             <div>
                 <a href="/loggers" class="mainlogo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iAxe.svg" alt="Loggers Icon" class="iloggers">
