@@ -14,8 +14,9 @@
     <header data-scroll-header>
         <figure>
             <div id="avatar">
+                <?php echo get_avatar( get_current_user_id(), 50); ?>
             </div>
-            <figcaption>shintarou kawara</figcaption>
+            <figcaption><?php the_author_meta( 'first_name', get_current_user_id()); ?> <?php the_author_meta( 'last_name', get_current_user_id() ); ?></figcaption>
         </figure>
         <input type="checkbox" id="drawer">
         <label for="drawer">
@@ -61,6 +62,7 @@
         <header>
             <figure>
                 <div id="avatar">
+                    <?php echo get_avatar( get_current_user_id(), 50); ?>
                 </div>
             </figure>
         </header>
@@ -74,8 +76,9 @@
             </a>
             </div>
             <div>
-                <figcaption>shintarou<br>kawara</figcaption>
+                <figcaption><?php the_author_meta( 'first_name', get_current_user_id()); ?><br><?php the_author_meta( 'last_name', get_current_user_id()); ?></figcaption>
                 <div id="avatar">
+                    <?php echo get_avatar( get_current_user_id(), 50); ?>
                 </div>
             </div>
         </figure>

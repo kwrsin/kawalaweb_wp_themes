@@ -32,11 +32,14 @@ body {
 }
 
 #avatar {
-    background: url('http://www.gravatar.com/avatar/6a77f615cddf25231f63bb9e4476fc4c.jpg?s=50') no-repeat center;
-    border-radius: 50%;
+    /* background: url('http://www.gravatar.com/avatar/6a77f615cddf25231f63bb9e4476fc4c.jpg?s=50') no-repeat center; */
     width: var(--avatar-size);
     height: var(--avatar-size);
     margin: 2em auto 1em auto;
+}
+
+#avatar img {
+    border-radius: 50%;
 }
 
 figcaption {
