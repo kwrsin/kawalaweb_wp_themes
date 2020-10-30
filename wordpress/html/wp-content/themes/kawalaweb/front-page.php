@@ -103,7 +103,8 @@
                         you can download it a below icon.
                     </span>
                     <div class="storebadges">
-                        <a href="https://apps.apple.com/us/app/ran-ran-ranse/id1217830782?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+                        <a href="https://apps.apple.com/us/app/ran-ran-ranse/id1217830782?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
+                        <a href='https://play.google.com/store/apps/details?id=com.memorial_f.ranranranse&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  style="display:inline-block;overflow:hidden;background:url(<?php echo get_template_directory_uri(); ?>/assets/images/en_badge_web_generic.png) no-repeat;background-size: cover;width:135px;height:40px;" target="_blank"></a>
                     </div>
                 </div>
                 <div class="card clearfix">

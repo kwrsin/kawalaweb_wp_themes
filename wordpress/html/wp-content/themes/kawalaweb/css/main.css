@@ -269,6 +269,11 @@ section .card .storebadges {
     justify-content: center;
 }
 
+section .card .storebadges a {
+    margin-right: 0.5rem;
+}
+
+
 @keyframes shake {
     0%   {width:168px; height:40px;}
     25%  {width:170px; height:45px;}
