@@ -89,6 +89,32 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork east">
+                        <h4>Pactack</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pastack.png" alt="">
+                        </div>
+                        <h5>2021-</h5>
+                    </div>                    
+                    <span>
+                        How about a freshly-made text creation iOS app?<br>
+                        <br>
+                        A text clipboard manager app!
+                        We've just released "Pastack".<br>
+                        <br>
+                        It's a text clipboard management app for Mac users.
+                        You can manage your clipboard list on your iPhone.
+                        You can also tag clips and search them.
+                        <br>
+                        I hope this app will be a good companion when you create documents on your Mac.<br>
+                        I'd be honored if this app can help someone's writing.<br>
+                        I would be honored.
+                   </span>
+                    <div class="storebadges">
+                        <a href="https://apps.apple.com/app/id1597700110" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork west">
                         <h4>Ran Ran Ranse</h4>
                         <div>
