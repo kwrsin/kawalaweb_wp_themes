@@ -125,9 +125,11 @@
                         I would be honored.
                         Try it 👉 <a href="https://apps.apple.com/us/app/pastack/id1597700110" target="_blank" >here</a>!
                    </span>
-                    <div class="storebadges">
-                        <a href="https://apps.apple.com/app/id1597700110" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
-                    </div>
+                    <!--
+                      <div class="storebadges">
+                          <a href="https://apps.apple.com/app/id1597700110" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
+                      </div>
+                    -->
                 </div>
                 <div class="card clearfix">
                     <div class="artwork west">
@@ -143,7 +145,7 @@
                         one has just few commands and light weight, so whoever, wherever, whenever you can play it.<br>
                         you can download it a below icon.
                     </span>
-                    <--
+                    <!--
                       <div class="storebadges">
                           <a href="https://apps.apple.com/us/app/ran-ran-ranse/id1217830782?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-03-22&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;" target="_blank"></a>
                           <a href='https://play.google.com/store/apps/details?id=com.memorial_f.ranranranse&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'  style="display:inline-block;overflow:hidden;background:url(<?php echo get_template_directory_uri(); ?>/assets/images/en_badge_web_generic.png) no-repeat;background-size: cover;width:135px;height:40px;" target="_blank"></a>
