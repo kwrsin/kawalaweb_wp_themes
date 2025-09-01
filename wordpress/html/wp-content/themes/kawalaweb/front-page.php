@@ -89,6 +89,20 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork west">
+                        <h4>MindElixler for Kwrsin</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mefk.png" alt="">
+                        </div>
+                        <h5>2025-</h5>
+                    </div>
+                    <span>
+                      Organize your ideas with a free #MindMap tool 🧠
+                      No login. No install. Just open in your browser.
+                      Try it 👉 <a href="https://kwrsin.github.io/mefk/" target="_blank" >here</a>
+                    </span>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork east">
                         <h4>Pactack</h4>
                         <div>
@@ -117,10 +131,10 @@
                 <div class="card clearfix">
                     <div class="artwork west">
                         <h4>Ran Ran Ranse</h4>
-                        <div>
+                        <div class="grave">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rrr.png" alt="">
                         </div>
-                        <h5>2019-</h5>
+                        <h5>2019-2023</h5>
                     </div>                    
                     <span>
                         I still have been playing retro video games since I was a kit. I love them. my favorite genre is strategy game. Above all,  I was getting into a Series of "Nobunaga no Yabo" from KOEI.<br>
