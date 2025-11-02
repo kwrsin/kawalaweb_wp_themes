@@ -90,7 +90,7 @@
             <div class="cards">
                 <div class="card clearfix">
                     <div class="artwork east">
-                        <h4>Pactack</h4>
+                        <h4>ACROSS RIDER</h4>
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/across_rider.png" alt="">
                         </div>
