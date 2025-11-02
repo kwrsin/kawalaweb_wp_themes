@@ -97,12 +97,13 @@
                         <h5>2025-</h5>
                     </div>                    
                     <span>
-                    📣 New Release Alert! 📣 A high-speed mix of motorcycle racing and a man’s burning story — ACROSS RIDER is here! Race against time to place in the top 3, using coins, fuel, and jewels to gain the edge. With EASY and HARD modes, both beginners and pros can enjoy the thrill! Experience intense stages like “God Wind” and “Death Trains” — each packed with adrenaline and challenge. It all begins with a man’s wish: “I just want to make her happy.” But an unexpected deal with a mysterious agent turns his ride into a battle for fate! 🎮 Play now and carve your own racing legend!
-
-                    # ACROSS RIDER 
-                    Try it 👉 <a href="https://kwrsin.github.io/games/AcrossRider/" target="_blank" >here</a>!
-
-                    #ACROSSRIDER #BikeGame #RacingGame #IndieGame #GamersUnite #NewGameRelease
+                        📣 New Release Alert! <br/>
+                        📣 A high-speed mix of motorcycle racing and a man’s burning story — ACROSS RIDER is here! Race against time to place in the top 3, using coins, fuel, and jewels to gain the edge. With EASY and HARD modes, both beginners and pros can enjoy the thrill! Experience intense stages like “God Wind” and “Death Trains” — each packed with adrenaline and challenge. It all begins with a man’s wish: “I just want to make her happy.” But an unexpected deal with a mysterious agent turns his ride into a battle for fate! 🎮 <br/>
+                        Play now and carve your own racing legend!<br/>
+                        <br/>
+                        Try it 👉 <a href="https://kwrsin.github.io/games/AcrossRider/" target="_blank" >here</a>!<br/>
+                        <br/>
+                        #ACROSSRIDER #BikeGame #RacingGame #IndieGame #GamersUnite #NewGameRelease<br/>
                    </span>
                 </div>
                 <div class="card clearfix">
