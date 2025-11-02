@@ -89,6 +89,23 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork east">
+                        <h4>Pactack</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/across_rider.png" alt="">
+                        </div>
+                        <h5>2025-</h5>
+                    </div>                    
+                    <span>
+                    📣 New Release Alert! 📣 A high-speed mix of motorcycle racing and a man’s burning story — ACROSS RIDER is here! Race against time to place in the top 3, using coins, fuel, and jewels to gain the edge. With EASY and HARD modes, both beginners and pros can enjoy the thrill! Experience intense stages like “God Wind” and “Death Trains” — each packed with adrenaline and challenge. It all begins with a man’s wish: “I just want to make her happy.” But an unexpected deal with a mysterious agent turns his ride into a battle for fate! 🎮 Play now and carve your own racing legend!
+
+                    # ACROSS RIDER 
+                    Try it 👉 <a href="https://kwrsin.github.io/games/AcrossRider/" target="_blank" >here</a>!
+
+                    #ACROSSRIDER #BikeGame #RacingGame #IndieGame #GamersUnite #NewGameRelease
+                   </span>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork west">
                         <h4>MindElixler for Kwrsin</h4>
                         <div>
