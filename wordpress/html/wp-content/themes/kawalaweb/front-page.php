@@ -18,7 +18,7 @@
                     I live in Fukuoka, Japan and have been freelancing as a software engineer for over 10 years.
                 </p>
                 <p>
-                    I have a long experience in front-end development mainly. I used to develop ATMs for banking systems. 
+                    I have a long experience in front-end development mainly. I used to develop ATMs for banking systems.
                 </p>
                 <p>
                     Now I'm building web applications for end users in Japan.
@@ -89,13 +89,35 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork west">
+                        <h4>Muscle Revenger</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muscle_revenger.png" alt="">
+                        </div>
+                        <h5>2026-4</h5>
+                    </div>
+                    <span>
+                      MUSCLE REVENGER is an action-packed escape and revenge game where you play as Match, a justice-driven professional wrestler who has been falsely accused of a crime.<br/><br/>
+
+                      Set in a heavily guarded prison, you must fight your way through relentless guards, evade their pursuit, and use a variety of items to clear each stage. Your objective is to collect keys within the time limit, reach the exit, exact your revenge, and break out of prison.<br/><br/>
+
+                      Use skillful controls, precise timing, and smart strategy to overcome deadly traps and powerful boss enemies.<br/><br/>
+
+                      Will you be able to escape, reclaim your identity, and bring justice to those who betrayed you?<br/><br/>
+
+                      #MuscleRevenger #ActionGame #BroserGame #IndieGame  #NewGameRelease<br/>
+
+                      Try it 👉 <a href="https://kwrsin.github.io/games/MuscleRevenger/" target="_blank" >here</a>!
+                    </span>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork east">
                         <h4>ACROSS RIDER</h4>
                         <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/across_rider.png" alt="">
                         </div>
                         <h5>2025-</h5>
-                    </div>                    
+                    </div>
                     <span>
                         📣 New Release Alert! <br/>
                         📣 A high-speed mix of motorcycle racing and a man’s burning story — ACROSS RIDER is here! Race against time to place in the top 3, using coins, fuel, and jewels to gain the edge. With EASY and HARD modes, both beginners and pros can enjoy the thrill! Experience intense stages like “God Wind” and “Death Trains” — each packed with adrenaline and challenge. It all begins with a man’s wish: “I just want to make her happy.” But an unexpected deal with a mysterious agent turns his ride into a battle for fate! 🎮 <br/>
@@ -127,7 +149,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pastack.png" alt="">
                         </div>
                         <h5>2021-</h5>
-                    </div>                    
+                    </div>
                     <span>
                         How about a freshly-made text creation iOS app?<br>
                         <br>
@@ -156,10 +178,10 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rrr.png" alt="">
                         </div>
                         <h5>2019-2023</h5>
-                    </div>                    
+                    </div>
                     <span>
                         I still have been playing retro video games since I was a kit. I love them. my favorite genre is strategy game. Above all,  I was getting into a Series of "Nobunaga no Yabo" from KOEI.<br>
-                        “Ran Ran Ranse(ランラン乱世)”  is game that collaborated smart phone app which is simple and useful, with the genre of the game. 
+                        “Ran Ran Ranse(ランラン乱世)”  is game that collaborated smart phone app which is simple and useful, with the genre of the game.
                         one has just few commands and light weight, so whoever, wherever, whenever you can play it.<br>
                         you can download it a below icon.
                     </span>
@@ -177,7 +199,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fchart.png" alt="">
                         </div>
                         <h5>2018-</h5>
-                    </div>                    
+                    </div>
                     <span>
                         "Money comes and goes." right?<br>
                         "No! Money has never come to me. My Money goes away from me all the time."
@@ -197,7 +219,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/okappa.png" alt="">
                         </div>
                         <h5>2017-</h5>
-                    </div>                    
+                    </div>
                     <span>
                         I am afraid that there would be no one put a plastic model on his/her head in japan.<br>
                         No! they are there.
@@ -218,7 +240,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/yabusame.png" alt="">
                         </div>
                         <h5>2014-2019</h5>
-                    </div>                    
+                    </div>
                     <span>Here is a game app scrolling infinitely which a player on horse having a bow and arrows is going to destroy targets to get high scores. Why I decided to create one was to aim at getting a position of horrible game like flappy bird. <br>He died, safely, in 2019, without gaining popularity.</span>
                 </div>
                 <div class="card clearfix">
@@ -228,7 +250,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/p1up.png" alt="">
                         </div>
                         <h5>2015-2018</h5>
-                    </div>                    
+                    </div>
                     <span>It was a simple counter that was included Apple's GAME CENTER. the app could increment or decrement one by one from 0 to 99,999 limited and clear a counter. and one could compete to friends. he was retired his career as Apple's App Store was updated.</span>
                 </div>
                 <div class="card clearfix">
@@ -238,7 +260,7 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pochittona.png" alt="">
                         </div>
                         <h5>2015-2015</h5>
-                    </div>                    
+                    </div>
                     <span>
                         even though you push the button, a lot of mechas (i.e. tiny robots) does not rush out of a parent's mouth as fighting supporters.<br>
                         <br>
@@ -246,8 +268,8 @@
                         I know. me too.<br>
                         What I want to say is that this is a browser extension for safari, mac os x. and allow you to scroll  a page while moving your mouse.<br>
                         That's it.<br>
-                        but, she died prematurely only around 3 months. 
-                        because apple's safari extension galleries often had changed their security rules. 
+                        but, she died prematurely only around 3 months.
+                        because apple's safari extension galleries often had changed their security rules.
                         in result, the author was at a lost and gave up developing it.<br>
                         <br>
                         rest in peace.<br>
