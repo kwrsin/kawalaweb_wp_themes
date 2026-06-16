@@ -89,6 +89,26 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork east">
+                        <h4>Mini Local File Manager</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mlfm.png" alt="">
+                        </div>
+                        <h5>2026-6</h5>
+                    </div>
+                    <span>
+                      Mini Local FileManager 📁
+
+                      A lightweight local file manager that runs entirely in your browser.
+                      No server setup, no cloud, no uploads—just fast and private file management on your own machine.
+                      Perfect for notes, Markdown, and local projects.
+                      #opensource #webdev #productivity
+
+
+                      Try it 👉 <a href="https://github.com/kwrsin/mini-local-filemanager" target="_blank" >here</a>!
+                   </span>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork west">
                         <h4>Muscle Revenger</h4>
                         <div>
