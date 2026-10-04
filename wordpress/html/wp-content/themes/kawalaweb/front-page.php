@@ -89,6 +89,22 @@
         <div>
             <div class="cards">
                 <div class="card clearfix">
+                    <div class="artwork west">
+                        <h4>Light Weight Simple Memo</h4>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lwsm.png" alt="">
+                        </div>
+                        <h5>2026-10</h5>
+                    </div>
+                    <span>
+                      Meet Light Weight Simple Memo 📝
+                      A tiny memo pad for Markdown & HTML. Auto-save, preview/edit toggle, find & replace, dark mode, and it works offline as a PWA. No sign-up, no server. Your notes stay on your device.
+
+                      #Markdown #PWA #productivity
+                      Try it 👉 <a href="https://kwrsin.github.io/lwsm" target="_blank" >here</a>!
+                   </span>
+                </div>
+                <div class="card clearfix">
                     <div class="artwork east">
                         <h4>Mini Local File Manager</h4>
                         <div>
